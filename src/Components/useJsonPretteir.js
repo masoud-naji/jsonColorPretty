@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 import "./useJsonPretteir.css";
 function UseJsonPretteir({
   prettyjson,
@@ -12,7 +12,7 @@ function UseJsonPretteir({
   number_font_size,
   boolean_font_size,
   null_font_size,
-  key_font_size
+  key_font_size,
 }) {
   useEffect(() => {
     document.documentElement.style.setProperty("--preBcl", preBcl || "white");
@@ -61,7 +61,7 @@ function UseJsonPretteir({
     number_font_size,
     boolean_font_size,
     null_font_size,
-    key_font_size
+    key_font_size,
   ]);
 
   function syntaxHighlight(json) {
